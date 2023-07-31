@@ -12,6 +12,7 @@ export class RewardMoneyOnMessage extends Listener {
 	public async run(message: Message) {
 		if (message.content.startsWith('!')) return;
 		if (message.author.bot) return;
+    if (walletConf.blockedChannels?.includes(message.channelId)) return;
 		if (!message.member) return;
 
 		const member = message.member;
