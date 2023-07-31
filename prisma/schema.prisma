@@ -11,6 +11,31 @@ generator client {
 }
 
 model User {
-  id String @id
-  balance Int @default(0)
+  id        String   @id
+  createdAt DateTime @default(now())
+  wallets   Member[]
+
+  @@map("Users")
+}
+
+model Guild {
+  id        String   @id
+  createdAt DateTime @default(now())
+  wallets   Member[]
+
+  @@map("Guilds")
+}
+
+model Member {
+  money     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id])
+  guild     Guild    @relation(fields: [guildId], references: [id])
+
+  userId  String
+  guildId String
+
+  @@id([userId, guildId])
+  @@map("GuildMembers")
 }

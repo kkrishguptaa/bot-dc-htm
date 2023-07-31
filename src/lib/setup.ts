@@ -2,6 +2,7 @@
 process.env.NODE_ENV ??= 'development';
 
 import '@sapphire/plugin-logger/register';
+import '@sapphire/plugin-editable-commands';
 import { setup } from '@skyra/env-utilities';
 import * as colorette from 'colorette';
 import { join } from 'node:path';

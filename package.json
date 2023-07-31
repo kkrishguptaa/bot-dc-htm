@@ -1,20 +1,24 @@
 {
-  "name": "",
+  "name": "htm-discord-bot",
   "version": "1.0.0",
   "main": "dist/index.js",
   "author": "@sapphire",
-  "license": "UNLICENSE",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "@prisma/client": "^5.0.0",
     "@sapphire/decorators": "^6.0.2",
     "@sapphire/discord.js-utilities": "7.0.1",
     "@sapphire/framework": "^4.5.1",
+    "@sapphire/plugin-editable-commands": "^3.0.2",
     "@sapphire/plugin-logger": "^3.0.5",
+    "@sapphire/plugin-subcommands": "^4.0.2",
     "@sapphire/utilities": "^3.13.0",
     "@skyra/env-utilities": "^1.2.1",
+    "@types/common-tags": "^1.8.1",
     "colorette": "^2.0.20",
-    "discord.js": "^14.11.0",
+    "common-tags": "^1.8.2",
+    "discord.js": "14.x",
     "prisma": "^5.0.0"
   },
   "devDependencies": {
