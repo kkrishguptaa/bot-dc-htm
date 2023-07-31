@@ -1,7 +1,6 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Command } from '@sapphire/framework';
 import { EmbedBuilder, Message } from 'discord.js';
-import { CommandConf } from '../../lib/config';
 import { p } from '../../lib/prisma/client';
 
 @ApplyOptions<Command.Options>({
@@ -30,23 +29,13 @@ export class LeaderboardCommand extends Command {
 			return `<@${v.userId}>    ${v.money}`;
 		});
 
-		const leaderboardMessage = await message.reply({
+		return await message.reply({
 			embeds: [
 				new EmbedBuilder({
 					title: `Leaderboard of ${message.guild?.name}`,
 					description: leaderboardFields.join('\n')
 				}).setColor('#EB459E')
 			]
-		});
-
-		setTimeout(
-			() => {
-				leaderboardMessage.delete();
-				message.delete();
-			},
-			CommandConf.deleteMessageAfter * 60 * 1000
-		);
-
-		return;
+		})
 	}
 }

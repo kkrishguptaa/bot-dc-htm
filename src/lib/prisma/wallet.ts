@@ -102,7 +102,7 @@ export class GuildWalletManager {
 			}
 		});
 
-		const channel = this._discord.guild.channels.cache.get(walletConf.log.channel);
+		const channel = this._discord.guild.channels.cache.get(walletConf.log.channel as string);
 
 		if (!channel?.isTextBased()) return;
 

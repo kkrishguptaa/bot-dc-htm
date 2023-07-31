@@ -40,4 +40,6 @@ model Member {
 
   @@id([userId, guildId])
   @@map("GuildMembers")
+  @@index([userId])
+  @@index([guildId])
 }

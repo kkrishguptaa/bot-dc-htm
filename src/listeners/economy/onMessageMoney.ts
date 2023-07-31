@@ -26,7 +26,7 @@ export class RewardMoneyOnMessage extends Listener {
 
 		const wallet = getGuildWalletManager(member, member.guild);
 
-		const increment = walletConf.onMessageMoney.amount[Math.floor(Math.random() * (walletConf.onMessageMoney.amount.length - 1))];
+		const increment = parseInt(new String((walletConf.onMessageMoney.amount ?? [3,4,5])[Math.floor(Math.random() * ((walletConf.onMessageMoney.amount?.length ?? 3) - 1))]).toString())
 
 		await wallet.update({
 			increment: increment
@@ -44,7 +44,7 @@ export class RewardMoneyOnMessage extends Listener {
 
 				container.logger.debug(`${member.user.username}${cyan(member.user.tag)}'s cooldown has expired!`);
 			},
-			walletConf.onMessageMoney.cooldown * 60 * 1000
+			parseInt(walletConf.onMessageMoney.cooldown ?? '3') * 60 * 1000
 		);
 	}
 }

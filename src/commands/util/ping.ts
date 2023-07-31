@@ -3,7 +3,6 @@ import { Command } from '@sapphire/framework';
 import { ApplicationCommandType, EmbedBuilder, InteractionResponse, Message } from 'discord.js';
 import { oneLine } from 'common-tags';
 import { isMessageInstance } from '@sapphire/discord.js-utilities';
-import { CommandConf } from '../../lib/config';
 
 @ApplyOptions<Command.Options>({
 	aliases: ['ping', 'pong'],
@@ -30,14 +29,6 @@ export class PingCommand extends Command {
 		loading.edit({
 			embeds: [pingedEmbed(loading)]
 		});
-
-		setTimeout(
-			() => {
-				loading.delete();
-				message.delete();
-			},
-			CommandConf.deleteMessageAfter * 60 * 1000
-		);
 	}
 
 	public async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
