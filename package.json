@@ -19,12 +19,14 @@
     "colorette": "^2.0.20",
     "common-tags": "^1.8.2",
     "discord.js": "14.x",
+    "express": "^4.18.2",
     "prisma": "^5.0.0"
   },
   "devDependencies": {
     "@sapphire/cli": "^1.6.1",
     "@sapphire/prettier-config": "^2.0.0",
     "@sapphire/ts-config": "^4.0.1",
+    "@types/express": "^4.17.17",
     "@types/node": "^18.17.0",
     "@types/ws": "^8.5.5",
     "prettier": "^3.0.0",
