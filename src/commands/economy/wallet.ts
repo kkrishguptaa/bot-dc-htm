@@ -111,11 +111,85 @@ export class WalletCommand extends Subcommand {
 				},
 				{
 					name: 'remove',
-					type: 'method'
+					type: 'method',
+          async messageRun(message, args) {
+						const { errorEmbed } = embeds();
+
+						if (!message.inGuild() || !message.member) {
+							return message.reply({
+								embeds: [errorEmbed("Wallets are for guilds's members, you cannot run this command outside of guild")]
+							});
+						}
+
+						if (!message.member.permissions.has('ManageMessages')) {
+							return message.reply({
+								embeds: [errorEmbed("'Kya phook ke aaya hai be?' - Sharan Hegde, This command can only be run by admins")]
+							});
+						}
+
+						const member = await args.pick('member');
+
+						const amount = args.finished ? undefined : await args.rest('number');
+
+						if (!amount || !member) {
+							return message.reply({
+								embeds: [errorEmbed('Provided arguments are incorrect')]
+							});
+						}
+
+						const wallet = getGuildWalletManager(member, member.guild);
+
+						const currentWallet = await wallet.update({
+							decrement: amount
+						});
+
+						message.reply('Operation Strix, Completed. Check DMs');
+
+						const dm = await message.author.createDM(true);
+
+						return dm.send(`Task accomplised ${member.displayName} now has ${currentWallet?.money}`);
+					}
 				},
 				{
 					name: 'set',
-					type: 'method'
+					type: 'method',
+          async messageRun(message, args) {
+						const { errorEmbed } = embeds();
+
+						if (!message.inGuild() || !message.member) {
+							return message.reply({
+								embeds: [errorEmbed("Wallets are for guilds's members, you cannot run this command outside of guild")]
+							});
+						}
+
+						if (!message.member.permissions.has('ManageMessages')) {
+							return message.reply({
+								embeds: [errorEmbed("'Kya phook ke aaya hai be?' - Sharan Hegde, This command can only be run by admins")]
+							});
+						}
+
+						const member = await args.pick('member');
+
+						const amount = args.finished ? undefined : await args.rest('number');
+
+						if (!amount || !member) {
+							return message.reply({
+								embeds: [errorEmbed('Provided arguments are incorrect')]
+							});
+						}
+
+						const wallet = getGuildWalletManager(member, member.guild);
+
+						const currentWallet = await wallet.update({
+							set: amount
+						});
+
+						message.reply('Operation Strix, Completed. Check DMs');
+
+						const dm = await message.author.createDM(true);
+
+						return dm.send(`Task accomplised ${member.displayName} now has ${currentWallet?.money}`);
+					}
 				}
 			]
 		});
