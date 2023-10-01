@@ -4,7 +4,8 @@
 		"rootDir": "src",
 		"outDir": "dist",
 		"tsBuildInfoFile": "dist/.tsbuildinfo",
-    "module": "ESNext"
+    "module": "CommonJS",
+    "target": "ES6"
 	},
 	"include": ["src"]
 }
