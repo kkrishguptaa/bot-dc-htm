@@ -8,7 +8,7 @@
   "dependencies": {
     "@prisma/client": "^5.0.0",
     "@sapphire/decorators": "^6.0.2",
-    "@sapphire/discord.js-utilities": "7.0.1",
+    "@sapphire/discord.js-utilities": "7.0.2",
     "@sapphire/framework": "^4.5.1",
     "@sapphire/plugin-editable-commands": "^3.0.2",
     "@sapphire/plugin-logger": "^3.0.5",
