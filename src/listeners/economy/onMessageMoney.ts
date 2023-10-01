@@ -31,7 +31,7 @@ export class RewardMoneyOnMessage extends Listener {
 
 		await wallet.update({
 			increment: increment
-		});
+		}, container.client.user!);
 
 		const currentBalance = (await wallet.read()).money;
 

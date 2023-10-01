@@ -1,4 +1,4 @@
-import { Collection, EmbedBuilder, type GuildMember as DiscordGuildMember, Guild } from 'discord.js';
+import { Collection, EmbedBuilder, type GuildMember as DiscordGuildMember, Guild, User } from 'discord.js';
 import { Prisma, type Member as DatabaseGuildMember } from '@prisma/client';
 import { p } from './client';
 import { walletConf } from '../config';
@@ -87,7 +87,7 @@ export class GuildWalletManager {
 		return this._db as DatabaseGuildMember;
 	}
 
-	async update(money: Prisma.IntFieldUpdateOperationsInput, actor: DiscordGuildMember) {
+	async update(money: Prisma.IntFieldUpdateOperationsInput, actor: DiscordGuildMember | User) {
 		await this._createEntryIfNotExists();
 
 		const currentWallet = await p.member.update({
@@ -109,7 +109,7 @@ export class GuildWalletManager {
 		const embed = new EmbedBuilder({
       footer: {
         text: `Action by ${actor.displayName}`,
-        iconURL: actor.user.displayAvatarURL()
+        iconURL: actor.displayAvatarURL()
       }
     });
 
