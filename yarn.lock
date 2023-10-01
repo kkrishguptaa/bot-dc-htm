@@ -190,13 +190,12 @@
     "@skyra/editable-commands" "^3.0.1"
 
 "@sapphire/plugin-logger@^3.0.5":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-3.0.5.tgz#32bc89e7a7bf6dad743f56dc500a682867232a65"
-  integrity sha512-Y7D4f98TAyMSD/ZRIoQSg72HvzUtnjcV3NCk+Dk+SEv+uV5F0UI5SRVB4LRJIc4KW3qaQRxy3VLTIiEF8B2nIA==
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-3.0.6.tgz#a9969f44c15a4c40f2cf6a97bdec048601350f5a"
+  integrity sha512-BMluxIdVODObdbCy4TRkCmSAB/T/XQlYxaD25HD+1Z4feUVrBGWFmmWQo/2X4aLMD3VZi5RQ5oY6kZgtHn+ufA==
   dependencies:
     "@sapphire/timestamp" "^1.0.1"
     colorette "^2.0.20"
-    tslib "^2.6.0"
 
 "@sapphire/plugin-subcommands@^4.0.2":
   version "4.0.2"
