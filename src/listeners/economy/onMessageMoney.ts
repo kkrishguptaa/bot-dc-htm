@@ -1,4 +1,3 @@
-import { ApplyOptions } from '@sapphire/decorators';
 import { Listener, container } from '@sapphire/framework';
 import { Message } from 'discord.js';
 import { cyan } from 'colorette';
@@ -7,8 +6,14 @@ import { walletConf } from '../../lib/config';
 
 const cooldowns: Set<string> = new Set();
 
-@ApplyOptions<Listener.Options>({ event: 'messageCreate' })
 export class RewardMoneyOnMessage extends Listener {
+  constructor(context: Listener.Context) {
+    super(context, {
+      once: false,
+      event: 'messageCreate',
+    });
+  }
+
 	public async run(message: Message) {
 		if (message.content.startsWith('!')) return;
 		if (message.author.bot) return;

@@ -3,9 +3,7 @@
 	"compilerOptions": {
 		"rootDir": "src",
 		"outDir": "dist",
-		"tsBuildInfoFile": "dist/.tsbuildinfo",
-    "module": "CommonJS",
-    "target": "ES6"
+		"tsBuildInfoFile": "dist/.tsbuildinfo"
 	},
 	"include": ["src"]
 }

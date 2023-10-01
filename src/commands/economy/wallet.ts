@@ -1,4 +1,3 @@
-import { ApplyOptions } from '@sapphire/decorators';
 import { Command, type PieceContext } from '@sapphire/framework';
 import { ApplicationCommandType, EmbedBuilder, GuildMember } from 'discord.js';
 import { Subcommand, type SubcommandOptions } from '@sapphire/plugin-subcommands';
@@ -29,18 +28,16 @@ function embeds() {
 	};
 }
 
-@ApplyOptions<Subcommand.Options>({
-	aliases: ['wallet', 'bal', 'balance', 'money', 'dollah', '$$$', 'rupiah', 'ruppee', 'paisa', 'rokra' ],
-	description: 'Check your balance!',
-	detailedDescription:
-		'This command is used to `check` your balance (available to everyone) and `update` and `set` balance of other people (if you are an admin)',
-	requiredClientPermissions: ['ViewChannel', 'SendMessages', 'EmbedLinks'],
-	requiredUserPermissions: ['ViewChannel', 'SendMessages', 'UseApplicationCommands']
-})
 export class WalletCommand extends Subcommand {
 	constructor(context: PieceContext, options?: SubcommandOptions) {
 		super(context, {
 			...options,
+      aliases: ['wallet', 'bal', 'balance', 'money', 'dollah', '$$$', 'rupiah', 'ruppee', 'paisa', 'rokra' ],
+      description: 'Check your balance!',
+      detailedDescription:
+        'This command is used to `check` your balance (available to everyone) and `update` and `set` balance of other people (if you are an admin)',
+      requiredClientPermissions: ['ViewChannel', 'SendMessages', 'EmbedLinks'],
+      requiredUserPermissions: ['ViewChannel', 'SendMessages', 'UseApplicationCommands'],
 			subcommands: [
 				{
 					name: 'check',
