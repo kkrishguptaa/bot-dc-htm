@@ -183,12 +183,11 @@
     tslib "^2.6.0"
 
 "@sapphire/plugin-editable-commands@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-editable-commands/-/plugin-editable-commands-3.0.2.tgz#9f66a13f2f9b5758c4b6a95bed357881effad00c"
-  integrity sha512-6sC8qJHwsR+FKRF4UnhaTgPreP5iOmm5I97JFg0QOffnD8ljcZiStaqCyrgxH9PGrD3jPBcNRgpq+fEMfD+2lQ==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-editable-commands/-/plugin-editable-commands-3.0.3.tgz#bc19ea27ddd498bd420b1f84718ef7ee68fc1bec"
+  integrity sha512-YjvnkqM9mRy41J/4l23VQh0Bh0jguJJnlaKBjR/Qd2/0z9EGuqCvAgnu+S1HfvN3nSnVCzO11u/Z/Lp31Qfc8A==
   dependencies:
     "@skyra/editable-commands" "^3.0.1"
-    tslib "^2.5.0"
 
 "@sapphire/plugin-logger@^3.0.5":
   version "3.0.5"
