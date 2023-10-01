@@ -4,7 +4,7 @@ import { EmbedBuilder, Message } from 'discord.js';
 import { p } from '../../lib/prisma/client';
 
 @ApplyOptions<Command.Options>({
-	aliases: ['leaderboard', 'top'],
+	aliases: ['leaderboard', 'top', 'richest', 'rich', 'richies', 'scroogemcducks', 'batmans', 'tonystarks', 'billionaires', 'millionaires'],
 	description: "Checks the bot's ping to the Discord server.",
 	detailedDescription:
 		"Calculates the bot's ping to the discord server using the websocket connection ping and the time to round trip of editing an message.",

@@ -87,7 +87,7 @@ export class GuildWalletManager {
 		return this._db as DatabaseGuildMember;
 	}
 
-	async update(money: Prisma.IntFieldUpdateOperationsInput) {
+	async update(money: Prisma.IntFieldUpdateOperationsInput, actor: DiscordGuildMember) {
 		await this._createEntryIfNotExists();
 
 		const currentWallet = await p.member.update({
@@ -106,7 +106,12 @@ export class GuildWalletManager {
 
 		if (!channel?.isTextBased()) return;
 
-		const embed = new EmbedBuilder({});
+		const embed = new EmbedBuilder({
+      footer: {
+        text: `Action by ${actor.displayName}`,
+        iconURL: actor.user.displayAvatarURL()
+      }
+    });
 
 		const title = (operation: string, amount: number, preposition?: string) =>
 			`${operation} ${amount} ${preposition ?? 'to'} ${this._discord.user.username}${this._discord.user.tag}'s balance`;

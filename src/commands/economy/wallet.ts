@@ -30,7 +30,7 @@ function embeds() {
 }
 
 @ApplyOptions<Subcommand.Options>({
-	aliases: ['wallet', 'bal', 'balance', 'money', 'dollah', '$$$'],
+	aliases: ['wallet', 'bal', 'balance', 'money', 'dollah', '$$$', 'rupiah', 'ruppee', 'paisa', 'rokra' ],
 	description: 'Check your balance!',
 	detailedDescription:
 		'This command is used to `check` your balance (available to everyone) and `update` and `set` balance of other people (if you are an admin)',
@@ -100,7 +100,7 @@ export class WalletCommand extends Subcommand {
 
 						const currentWallet = await wallet.update({
 							increment: amount
-						});
+						}, message.member);
 
 						message.reply('Operation Strix, Completed. Check DMs');
 
@@ -141,7 +141,7 @@ export class WalletCommand extends Subcommand {
 
 						const currentWallet = await wallet.update({
 							decrement: amount
-						});
+						}, message.member);
 
 						message.reply('Operation Strix, Completed. Check DMs');
 
@@ -182,7 +182,7 @@ export class WalletCommand extends Subcommand {
 
 						const currentWallet = await wallet.update({
 							set: amount
-						});
+						}, message.member);
 
 						message.reply('Operation Strix, Completed. Check DMs');
 
