@@ -114,7 +114,7 @@ export class GuildWalletManager {
     });
 
 		const title = (operation: string, amount: number, preposition?: string) =>
-			`${operation} ${amount} ${preposition ?? 'to'} ${this._discord.user.username}${this._discord.user.tag}'s balance`;
+			`${operation} ${amount} ${preposition ?? 'to'} ${this._discord.user.username}'s balance`;
 
 		if (money.increment) {
 			embed.setColor('#57F287');
