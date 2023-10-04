@@ -6,33 +6,6 @@ The following is a set of guidelines for contributing to the [HTM Discord Bot](h
 
 All types of contributions to this project are encouraged and valued. See the [Table of Contents](#table-of-contents) for different ways to help and details about how this project handles them. Please make sure to read the relevant section before making your contribution. The community looks forward to your contributions! 🎉
 
-## Table of Contents
-
-## Table of Contents
-
-- [Code of Conduct](#code-of-conduct)
-- [I have a Question](#i-have-a-question)
-- [How can I Contribute?](#how-can-i-contribute)
-  - [Legal Notice](#legal-notice)
-  - [Reporting Bugs](#reporting-bugs)
-    - [Submitting A Good Bug Report](#submitting-a-good-bug-report)
-  - [Suggesting Enhancements](#suggesting-enhancements)
-    - [Before Submitting an Enhancement](#before-submitting-an-enhancement)
-    - [How Do I Submit a Good Enhancement Suggestion?](#how-do-i-submit-a-good-enhancement-suggestion)
-  - [Your First Code Contribution 🎊](#your-first-code-contribution-)
-  - [Improving the Documentation 📄](#improving-the-documentation-)
-    - [1. Identify Documentation Needs](#1-identify-documentation-needs)
-    - [2. Create an Issue](#2-create-an-issue)
-    - [3. Make Changes](#3-make-changes)
-    - [4. Review and Collaboration](#4-review-and-collaboration)
-    - [5. Acknowledgment](#5-acknowledgment)
-  - [Pull Requests](#pull-requests)
-- [Styleguides](#styleguides)
-  - [Git Commit Messages](#git-commit-messages)
-  - [JavaScript or TypeScript Styleguide](#javascript-or-typescript-styleguide)
-  - [Documentation Styleguide](#documentation-styleguide)
-
-
 ## Code of Conduct
 
 This project and all its contributors are governed by our [Code of Conduct](https://github.com/xkrishguptaa/bot-dc-htm/blob/main/CODE_OF_CONDUCT.md). By taking part in this project, you are expected to uphold this code. If you find unacceptable behavior, report it to xkrishguptaa@gmail.com.
@@ -45,6 +18,7 @@ Before you ask a question, it is best to search for existing [Issues](https://gi
 
 If you then still feel the need to ask a question and need clarification, we recommend the following:
 
+- Join us on [Discord](https://bit.ly/HackTheMountains) and ask it!
 - Open an [Issue](https://github.com/xkrishguptaa/bot-dc-htm/issues/new).
 - Provide as much context as you can about what you're running into.
 - Provide project and platform versions, depending on what seems relevant.
@@ -78,12 +52,7 @@ Explain the method used, whether it's via mouse clicks, keyboard shortcuts, or o
 - **Enhance your report with screenshots or animated GIFs** that visually demonstrate the problem as you follow the described steps.
 - **If the issue wasn't triggered by a specific action, describe what you were doing before the problem occurred and provide any relevant additional information.**
 
-Once it's done:
-
-- The project team will label the issue accordingly.
-- A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-repro`. Bugs with the `needs-repro` tag will not be addressed until they are reproduced.
-- If the team is able to reproduce the issue, it will be marked `needs-fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be implemented by someone.
-
+Once it's done we will review and triage the issue accordingly.
 
 ### Suggesting Enhancements
 
@@ -107,9 +76,8 @@ This section guides you through submitting an enhancement suggestion for the pro
 
 ### Your First Code Contribution 🎊
 
-Unsure where to begin contributing? You can start by looking through these `beginner` and `help-wanted` or `good first issue` labeled issues:
+Unsure where to begin contributing? You can start by looking through these `help-wanted` or `good first issue` labeled issues:
 
-- Beginner Issues are very simple issues and require very less work.
 - Help Wanted Issues are a bit more involved.
 - `good first issue` - labeled issues maybe any type of issues.
 
