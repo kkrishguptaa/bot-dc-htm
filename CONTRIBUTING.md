@@ -6,33 +6,6 @@ The following is a set of guidelines for contributing to the [HTM Discord Bot](h
 
 All types of contributions to this project are encouraged and valued. See the [Table of Contents](#table-of-contents) for different ways to help and details about how this project handles them. Please make sure to read the relevant section before making your contribution. The community looks forward to your contributions! 🎉
 
-## Table of Contents
-
-## Table of Contents
-
-- [Code of Conduct](#code-of-conduct)
-- [I have a Question](#i-have-a-question)
-- [How can I Contribute?](#how-can-i-contribute)
-  - [Legal Notice](#legal-notice)
-  - [Reporting Bugs](#reporting-bugs)
-    - [Submitting A Good Bug Report](#submitting-a-good-bug-report)
-  - [Suggesting Enhancements](#suggesting-enhancements)
-    - [Before Submitting an Enhancement](#before-submitting-an-enhancement)
-    - [How Do I Submit a Good Enhancement Suggestion?](#how-do-i-submit-a-good-enhancement-suggestion)
-  - [Your First Code Contribution 🎊](#your-first-code-contribution-)
-  - [Improving the Documentation 📄](#improving-the-documentation-)
-    - [1. Identify Documentation Needs](#1-identify-documentation-needs)
-    - [2. Create an Issue](#2-create-an-issue)
-    - [3. Make Changes](#3-make-changes)
-    - [4. Review and Collaboration](#4-review-and-collaboration)
-    - [5. Acknowledgment](#5-acknowledgment)
-  - [Pull Requests](#pull-requests)
-- [Styleguides](#styleguides)
-  - [Git Commit Messages](#git-commit-messages)
-  - [JavaScript or TypeScript Styleguide](#javascript-or-typescript-styleguide)
-  - [Documentation Styleguide](#documentation-styleguide)
-
-
 ## Code of Conduct
 
 This project and all its contributors are governed by our [Code of Conduct](https://github.com/xkrishguptaa/bot-dc-htm/blob/main/CODE_OF_CONDUCT.md). By taking part in this project, you are expected to uphold this code. If you find unacceptable behavior, report it to xkrishguptaa@gmail.com.
