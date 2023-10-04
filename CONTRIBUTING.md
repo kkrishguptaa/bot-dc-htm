@@ -52,9 +52,7 @@ Explain the method used, whether it's via mouse clicks, keyboard shortcuts, or o
 - **Enhance your report with screenshots or animated GIFs** that visually demonstrate the problem as you follow the described steps.
 - **If the issue wasn't triggered by a specific action, describe what you were doing before the problem occurred and provide any relevant additional information.**
 
-Once it's done:
-
-- The project team will label the issue accordingly.
+Once it's done we will review and triage the issue accordingly.
 
 ### Suggesting Enhancements
 
