@@ -109,7 +109,6 @@ This section guides you through submitting an enhancement suggestion for the pro
 
 Unsure where to begin contributing? You can start by looking through these `beginner` and `help-wanted` or `good first issue` labeled issues:
 
-- Beginner Issues are very simple issues and require very less work.
 - Help Wanted Issues are a bit more involved.
 - `good first issue` - labeled issues maybe any type of issues.
 
