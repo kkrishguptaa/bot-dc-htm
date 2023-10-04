@@ -133,7 +133,6 @@ The process described here has several goals:
 To submit a better Pull Request, follow these:
 
 1. If applicable, use appropriate templates for the Pull Requests.
-2. Follow the [styleguides](#styleguides)
 3. After you submit your pull request, verify that all status checks are passing 
 <details>
 <summary>What if the status checks are failing?</summary>
