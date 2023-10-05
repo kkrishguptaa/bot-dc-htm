@@ -49,7 +49,7 @@ body:
 - type: dropdown
   id: priority
   attributes:
-    label: What is the priority of this issue? [ff](https://developers.google.com/issue-tracker/concepts/issues#priority)
+    label: `[ff](What is the priority of this issue?)`
     options:
     - P0
     - P1
