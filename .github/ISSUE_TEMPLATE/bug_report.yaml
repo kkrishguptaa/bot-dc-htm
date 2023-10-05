@@ -49,4 +49,4 @@ body:
 - type: dropdown
   id: priority
   attributes:
-    label: What is the priority of this issue? (Reference - https://developers.google.com/issue-tracker/concepts/issues#priority)
+    label: What is the priority of this issue? (Reference - )
