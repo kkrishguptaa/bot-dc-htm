@@ -213,16 +213,16 @@
   integrity sha512-ATb2pWPLcSgG7bzvT6MglUcDexFSufr2FLXUmhipWGFtZbvDhkopGBIuHyzoGy7LZvL8UY5T6pRLNdFv5pl/Lg==
 
 "@sapphire/framework@^4.6.0":
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-4.6.0.tgz#059d5e12504d40fc597445dab5911ef7980baae3"
-  integrity sha512-yEVEWw0g/0jscK2uS2Jxv3NUKM4NnGTPaoQn3x/Dvu2TLPytXcJmSKF8dH7p1uJGxeIqwyYNoPmYfttFFEitkQ==
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-4.6.1.tgz#ef6fa36a35dcd93f5373fab3a34f8e924514fb83"
+  integrity sha512-ZNaYAYYvPcwrdY8Jyunn4xt0gdauctiOt6j7VCun+NXRu9DQcFpZgeVsWB/ftH1fD8o4F4Bl88Iu3q/YLGwVJw==
   dependencies:
     "@discordjs/builders" "^1.6.5"
     "@sapphire/discord-utilities" "^3.1.1"
     "@sapphire/discord.js-utilities" "^7.0.2"
     "@sapphire/lexure" "^1.1.5"
     "@sapphire/pieces" "^3.7.0"
-    "@sapphire/ratelimits" "^2.4.6"
+    "@sapphire/ratelimits" "^2.4.7"
     "@sapphire/result" "^2.6.4"
     "@sapphire/stopwatch" "^1.5.0"
     "@sapphire/utilities" "^3.13.0"
@@ -273,7 +273,7 @@
   dependencies:
     prettier "^3.0.0"
 
-"@sapphire/ratelimits@^2.4.6":
+"@sapphire/ratelimits@^2.4.7":
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/@sapphire/ratelimits/-/ratelimits-2.4.7.tgz#bc4754bb29e275ab321f68a09556857265162d2d"
   integrity sha512-IJQySiK+A8P4E+0oW2TGDy4RBjMsw3hccFL0y4kjQ2VZNzPDHJSYR4Pb1TzlG6V9YTVdCNWJODFXXyVn3tEQ/A==
@@ -882,9 +882,9 @@ discord-api-types@0.37.50:
   integrity sha512-X4CDiMnDbA3s3RaUXWXmgAIbY1uxab3fqe3qwzg5XutR3wjqi7M3IkgQbsIBzpqBN2YWr/Qdv7JrFRqSgb4TFg==
 
 discord-api-types@^0.37.55:
-  version "0.37.58"
-  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.58.tgz#ed68fea0d4ceab6e65349089089bebb30b229045"
-  integrity sha512-LubQHjyrr4nXjotWuao9T5RjzvvDstRztIpf5vamIXreSu75FQD20BJv2FnNc+vqrWLWnQwqg3qPb9P6cE2sUw==
+  version "0.37.60"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.60.tgz#435855217afcf867e6ea20d0a750b23550b734ed"
+  integrity sha512-5BELXTsv7becqVHrD81nZrqT4oEyXXWBwbsO/kwDDu6X3u19VV1tYDB5I5vaVAK+c1chcDeheI9zACBLm41LiQ==
 
 discord.js@14.x:
   version "14.13.0"
