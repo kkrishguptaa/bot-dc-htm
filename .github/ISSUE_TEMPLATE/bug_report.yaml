@@ -49,7 +49,10 @@ body:
 - type: dropdown
   id: priority
   attributes:
-    label: `[ff](What is the priority of this issue?)`
+    label: What is the priority of this issue?
+    description: | Issue Priority | Description |
+                | P0 | An issue that needs to be addressed immediately and with as many resources as is required. Such an issue causes a full outage or makes a critical function of the product to be unavailable for everyone, without any known workaround. |
+                
     options:
     - P0
     - P1
