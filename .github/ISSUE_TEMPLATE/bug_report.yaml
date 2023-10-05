@@ -49,13 +49,26 @@ body:
 - type: dropdown
   id: priority
   attributes:
-    label: What is the priority of this issue?
-    description: | Issue Priority | Description |
-                | P0 | An issue that needs to be addressed immediately and with as many resources as is required. Such an issue causes a full outage or makes a critical function of the product to be unavailable for everyone, without any known workaround. |
-                
+    label: What is the priority of this issue?      
     options:
-    - P0
-    - P1
-    - P2
-    - P3
-    - P4
+    - Needs to be addressed immediately
+    - Needs to be addressed quickly
+    - Needs to be addressed on a reasonable timescale
+    - Should be addressed when able
+    - Should be addressed eventually
+
+body:
+- type: textarea
+  id: repro
+  attributes:
+    label: Reproduction steps
+    description: "How do you trigger this bug? Please walk us through it step by step."
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
+
