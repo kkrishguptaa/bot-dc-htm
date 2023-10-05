@@ -18,7 +18,7 @@ body:
     required: true
 
 - type: input
-  id: expected behaviour
+  id: expected-behaviour
   attributes:
     label: What behaviour did you expect?
     description: "Provide a clear and concise description of what you expected to happen"
@@ -49,4 +49,10 @@ body:
 - type: dropdown
   id: priority
   attributes:
-    label: What is the priority of this issue? (Reference - )
+    label: What is the priority of this issue? (Reference - https://developers.google.com/issue-tracker/concepts/issues#priority)
+    options:
+    - P0
+    - P1
+    - P2
+    - P3
+    - P4
