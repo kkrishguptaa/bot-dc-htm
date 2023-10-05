@@ -5,17 +5,48 @@ labels: "bug"
 body:
 - type: markdown
   attributes:
-    value: "## Welcome!"
-- type: markdown
-  attributes:
     value: |
       Thanks for taking the time to fill out this bug! If you need real-time help, join us on Discord.
       
 - type: input
-  id: prevalence
+  id: description
   attributes:
-    label: Bug prevalence
-    description: "How often do you or others encounter this bug?"
-    placeholder: "Whenever I visit the user account page (1-2 times a week)"
+    label: Describe the bug
+    description: "Provide a clear and concise description of what the bug is"
+    placeholder: "Example - Bot fails to respond to '!command' in Discord chat"
   validations:
     required: true
+
+- type: input
+  id: expected behaviour
+  attributes:
+    label: What behaviour did you expect?
+    description: "Provide a clear and concise description of what you expected to happen"
+    placeholder: "Example - Bot should respond to '!command' with a message"
+  validations:
+    required: true
+
+- type: input
+  id: reproduce-steps
+  attributes:
+    label: Steps to reproduce the bug
+    description: "Provide us clear steps to reproduce the bug"
+    placeholder: "Example - Open xyz channel and run !command"
+  validations:
+    required: true
+
+- type: dropdown
+  id: frequency
+  attributes:
+    label: How frequent do you see this bug?
+    options:
+      - Everytime (Very Frequently)
+      - Less Frequently
+      - Rarely
+  validations:
+    required: true
+
+- type: dropdown
+  id: priority
+  attributes:
+    label: What is the priority of this issue? (Reference - https://developers.google.com/issue-tracker/concepts/issues#priority)
