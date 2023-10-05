@@ -57,18 +57,11 @@ body:
     - Should be addressed when able
     - Should be addressed eventually
 
-body:
 - type: textarea
-  id: repro
+  id: additional-context
   attributes:
-    label: Reproduction steps
-    description: "How do you trigger this bug? Please walk us through it step by step."
-    value: |
-      1.
-      2.
-      3.
-      ...
-    render: bash
+    label: Add any other context about the problem here
   validations:
     required: true
+
 
