@@ -32,9 +32,7 @@ body:
     label: Steps to reproduce the bug
     description: "Provide us clear steps to reproduce the bug"
     placeholder: "Example - Open xyz channel and run !command"
-  validations:
-    required: true
-
+  
 - type: dropdown
   id: frequency
   attributes:
