@@ -62,5 +62,5 @@ body:
   attributes:
     label: Add any other context about the problem here
   validations:
-    required: true
+    required: false
 
