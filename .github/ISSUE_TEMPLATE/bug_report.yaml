@@ -43,9 +43,7 @@ body:
       - Everytime (Very Frequently)
       - Less Frequently
       - Rarely
-  validations:
-    required: true
-
+ 
 - type: dropdown
   id: priority
   attributes:
