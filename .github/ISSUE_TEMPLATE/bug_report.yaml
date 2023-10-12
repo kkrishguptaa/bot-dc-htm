@@ -32,17 +32,6 @@ body:
     label: Steps to reproduce the bug
     description: "Provide us clear steps to reproduce the bug"
     placeholder: "Example - Open xyz channel and run !command"
-  
-- type: dropdown
-  id: priority
-  attributes:
-    label: What is the priority of this issue?      
-    options:
-    - Needs to be addressed immediately
-    - Needs to be addressed quickly
-    - Needs to be addressed on a reasonable timescale
-    - Should be addressed when able
-    - Should be addressed eventually
 
 - type: textarea
   id: additional-context
