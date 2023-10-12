@@ -34,15 +34,6 @@ body:
     placeholder: "Example - Open xyz channel and run !command"
   
 - type: dropdown
-  id: frequency
-  attributes:
-    label: How frequent do you see this bug?
-    options:
-      - Everytime (Very Frequently)
-      - Less Frequently
-      - Rarely
- 
-- type: dropdown
   id: priority
   attributes:
     label: What is the priority of this issue?      
