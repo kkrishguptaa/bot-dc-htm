@@ -1,34 +1,35 @@
-import { Command } from '@sapphire/framework';
-import { EmbedBuilder, Message } from 'discord.js';
-import { p } from '../../lib/prisma/client';
+import { Command } from '@sapphire/framework'
+import { EmbedBuilder, type Message } from 'discord.js'
+import { p } from '../../lib/prisma/client'
 
 export class LeaderboardCommand extends Command {
-  constructor(context: Command.Context) {
+  constructor (context: Command.Context) {
     super(context, {
       aliases: ['leaderboard', 'top', 'richest', 'rich', 'richies', 'scroogemcducks', 'batmans', 'tonystarks', 'billionaires', 'millionaires'],
-      description: "Check the scroogemcducks of the server!",
+      description: 'Check the scroogemcducks of the server!',
       detailedDescription:
-        "This command is used to `check` the richest people of the server (available to everyone)",
+        'This command is used to `check` the richest people of the server (available to everyone)',
       requiredClientPermissions: ['ViewChannel', 'SendMessages', 'EmbedLinks'],
       requiredUserPermissions: ['ViewChannel', 'SendMessages', 'UseApplicationCommands']
     })
   }
-  public async messageRun(message: Message) {
-    if (!message.guildId) {
-      return message.reply('Please run this in a guild :/');
+
+  public async messageRun (message: Message): Promise<Message<boolean>> {
+    if ((message.guildId ?? '') === '') {
+      return await message.reply('Please run this in a guild :/')
     }
 
     const wallets = await p.member.findMany({
       where: {
-        guildId: message.guildId
+        guildId: message.guildId as string
       }
-    });
+    })
 
-    const top10 = wallets.sort((a, b) => b.money - a.money).splice(0, 10);
+    const top10 = wallets.sort((a, b) => b.money - a.money).splice(0, 10)
 
     const leaderboardFields = top10.map((v) => {
-      return `<@${v.userId}>    ${v.money}`;
-    });
+      return `<@${v.userId}>    ${v.money}`
+    })
 
     return await message.reply({
       embeds: [
