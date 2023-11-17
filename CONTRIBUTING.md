@@ -1,6 +1,6 @@
 # Contributing to HackTheMountains Discord Bot
 
-🎊 Hey, Thank you for considering contributing! We appreciate your time and effort in helping us improve this project. 🎊
+🎊 Hey, Thank you for considering contributing! We appreciate your valuable time and effort in helping us improve this project. 🎊
 
 The following is a set of guidelines for contributing to the [HTM Discord Bot](https://github.com/xkrishguptaa/bot-dc-htm) on GitHub. These are guidelines, not rules. Use your best judgement, and feel free to propose changes to this document through a pull request!
 
