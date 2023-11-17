@@ -1,7 +1,5 @@
-![](https://github.com/xkrishguptaa/bot-dc-htm/assets/135469703/40c3824c-32a9-4838-8b69-8d58d2b2a20e)
-
 <div align="center">
-<img height="300" width="573" src="https://github.com/xkrishguptaa/bot-dc-htm/assets/135469703/1a639daa-21e6-45df-9a5b-928c2a162267" />
+<img height="100" width="100" src="https://github.com/xkrishguptaa/bot-dc-htm/assets/135469703/8aa8bd79-cfaf-4f9e-b47a-62a5bd152e0c"/>
 <h1>HackTheMountains Discord Bot</h1>
 <p><a height="100" width="auto" href="https://bit.ly/HackTheMountains"><img alt="HackTheMountains Discord" src="https://img.shields.io/discord/739398445143425124?style=for-the-badge&logo=discord"></a> <a href="https://portal.hackthemountain.tech"><img alt="Register for Hack The Mountains" src="https://img.shields.io/badge/Register_for-Hack_The_Mountains-6229AE?style=for-the-badge" /></a><p>
 <p>Economy Management solution for one of India's largest Hackathons</p>
