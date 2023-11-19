@@ -603,10 +603,10 @@
     "@sapphire/timestamp" "^1.0.1"
     colorette "^2.0.20"
 
-"@sapphire/plugin-subcommands@^4.2.1":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-4.3.0.tgz#4e4bfdd1645983c0e4949b3cb660fde83919a0b1"
-  integrity sha512-+oivum6cGvI6E7mMcjLd6FYwW8Rpqpw4NNlyPz9c1dUEM5puU+H1rJbWJeHpsZqr4QBdVlC6tmbch/igT1ORzQ==
+"@sapphire/plugin-subcommands@^5.0.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-5.1.0.tgz#f22d1c5e4fbd49c7d96084e8ec615def65c6b60c"
+  integrity sha512-VBd6Ayjqa3bPTS4KCPnvFI5h/LCR53O1cJFyW7QN55Tzi/hXpzByo/HtR6IPdY2bQ5LuHVmKhvbAbI5LD0Q8LQ==
   dependencies:
     "@sapphire/utilities" "^3.13.0"
     tslib "^2.6.2"
