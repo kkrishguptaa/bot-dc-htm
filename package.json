@@ -12,7 +12,7 @@
     "@sapphire/framework": "^4.6.0",
     "@sapphire/plugin-editable-commands": "^3.0.3",
     "@sapphire/plugin-logger": "^3.0.6",
-    "@sapphire/plugin-subcommands": "^4.2.1",
+    "@sapphire/plugin-subcommands": "^5.0.0",
     "@sapphire/utilities": "^3.13.0",
     "@skyra/env-utilities": "^1.2.1",
     "@types/common-tags": "^1.8.2",
