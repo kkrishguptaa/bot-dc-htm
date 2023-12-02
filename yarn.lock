@@ -556,9 +556,9 @@
   integrity sha512-ATb2pWPLcSgG7bzvT6MglUcDexFSufr2FLXUmhipWGFtZbvDhkopGBIuHyzoGy7LZvL8UY5T6pRLNdFv5pl/Lg==
 
 "@sapphire/framework@^4.6.0":
-  version "4.8.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-4.8.2.tgz#1e031fccc7aacfdfdb2e03ef038d7a59d581e31e"
-  integrity sha512-MJH6NkdZtZ9DgcPD3ExQnjO7UYdZm2WQBC29jb9A6kmYzd/y+8/unSjURgDQQhw6+60QWN7tPJXCVQJmmlPVCw==
+  version "4.8.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-4.8.3.tgz#9344cf06c2f736e45a7bb72452e76a662b20ea84"
+  integrity sha512-q4mviP0MrnRvxOIiOGkX86HiVFuvtmOHP+8/SmOnrytToJuvK120sCIOABrF9jaPpohinu1DZPaAscD+/jHT7w==
   dependencies:
     "@discordjs/builders" "^1.7.0"
     "@sapphire/discord-utilities" "^3.2.0"
@@ -1793,9 +1793,9 @@ discord-api-types@0.37.61:
   integrity sha512-o/dXNFfhBpYHpQFdT6FWzeO7pKc838QeeZ9d91CfVAtpr5XLK4B/zYxQbYgPdoMiTDvJfzcsLW5naXgmHGDNXw==
 
 discord-api-types@^0.37.63:
-  version "0.37.63"
-  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.63.tgz#ba7e6b425806fc7335afbdff69fc006dc6daf208"
-  integrity sha512-WbEDWj/1JGCIC1oCMIC4z9XbYY8PrWpV5eqFFQymJhJlHMqgIjqoYbU812X5oj5cwbRrEh6Va4LNLumB2Nt6IQ==
+  version "0.37.65"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.65.tgz#68dcf9eaece271fb550370c2ba7fe71e927c56b2"
+  integrity sha512-CQHW3Nu04LEHIj1Xps/sfGhTdrowilxnek2tirpLhwvrmgmLr1C6A+4JFLs+0kJMH2IX2QgDyA9GfNehqN+xPQ==
 
 discord.js@14.x:
   version "14.14.1"
@@ -2038,9 +2038,9 @@ escape-string-regexp@^4.0.0:
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
 eslint-config-prettier@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-9.0.0.tgz"
-  integrity sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw==
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-9.1.0.tgz#31af3d94578645966c082fcb71a5846d3c94867f"
+  integrity sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==
 
 eslint-config-standard-with-typescript@^40.0.0:
   version "40.0.0"
@@ -3549,7 +3549,7 @@ lodash.uniqby@^4.7.0:
 
 lodash@^4.17.21, lodash@^4.17.4:
   version "4.17.21"
-  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loose-envify@^1.4.0:
