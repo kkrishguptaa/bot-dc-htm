@@ -512,11 +512,12 @@
   integrity sha512-JkLdIsP8fPAdh9ZZjrbHWR/+mZj0wvKS5ICibcLrRI1j84UmLMshx5n9QmL8b95d4onJ2xxiyugTgSAX7AalmA==
 
 "@sapphire/cli@^1.6.1":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/cli/-/cli-1.8.0.tgz#eee7230ce8642f9c290dbef8a289ef3fd9ed47e5"
-  integrity sha512-lOxt3cgMU8/2VChUE85SO46m09AadtM/PmSubSDHrgPwtGcERlHrDj1lPut15sb9t07+PNNfwc0yXEuxwQxDNw==
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/cli/-/cli-1.9.0.tgz#88d0881974a940ddf76ea28dec5a468e1f3c8f04"
+  integrity sha512-2WNMscS9c1+Y3W3Aem+BdgqgMnkbGrwmGaYr7kH+aGGG2Od12Drkq+umdNzF8DbiAiSaB6CK8sHe6HOqBvXfOA==
   dependencies:
     "@favware/colorette-spinner" "^1.0.1"
+    "@sapphire/node-utilities" "^1.0.0"
     "@sapphire/result" "^2.6.4"
     colorette "^2.0.20"
     commander "^11.1.0"
@@ -556,9 +557,9 @@
   integrity sha512-ATb2pWPLcSgG7bzvT6MglUcDexFSufr2FLXUmhipWGFtZbvDhkopGBIuHyzoGy7LZvL8UY5T6pRLNdFv5pl/Lg==
 
 "@sapphire/framework@^4.6.0":
-  version "4.8.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-4.8.3.tgz#9344cf06c2f736e45a7bb72452e76a662b20ea84"
-  integrity sha512-q4mviP0MrnRvxOIiOGkX86HiVFuvtmOHP+8/SmOnrytToJuvK120sCIOABrF9jaPpohinu1DZPaAscD+/jHT7w==
+  version "4.8.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-4.8.4.tgz#317653e1fd54bb902cf1a633a01f383ac0be6be4"
+  integrity sha512-ErnsCcvgtC/8/KS2gvV88EFtN4uteFzLKDfEjYebdXU7AVr9AoOBJtymYu42GHVZJ3eaYKGadUBJn6015LxaLw==
   dependencies:
     "@discordjs/builders" "^1.7.0"
     "@sapphire/discord-utilities" "^3.2.0"
@@ -576,6 +577,11 @@
   integrity sha512-afVTCLHezlyvdvvOcEeCzMA05l1yje9axtY7gWQpDcppOazskYPgGMVCdAbfHz5BsyABMZYT2MznY+phEgFc8Q==
   dependencies:
     "@sapphire/result" "^2.6.4"
+
+"@sapphire/node-utilities@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/node-utilities/-/node-utilities-1.0.0.tgz#69baba7538291e4a2185d78ab882845d49d16c60"
+  integrity sha512-xFC4UyzSKs6juyFtsUV4VNybg0KIpwaThED2TH3TGtNT5b0VFpILTXQtqXpPf+Rfmj+O/mLCm319xy4ohsQqxQ==
 
 "@sapphire/pieces@^3.10.0":
   version "3.10.0"
