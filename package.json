@@ -54,9 +54,9 @@
     "dev": "npm run build && npm run start",
     "watch:start": "tsc-watch --onSuccess \"npm run start\"",
     "format": "prettier --write \"src/\"",
-    "postinstall": "prisma db push && prisma generate",
     "lint": "eslint src/**/*.{ts,js}",
-    "lint:fix": "eslint src/**/*.{ts,js} --fix"
+    "lint:fix": "eslint src/**/*.{ts,js} --fix",
+    "clean": "rm -rf dist/"
   },
   "prettier": "@sapphire/prettier-config"
 }
