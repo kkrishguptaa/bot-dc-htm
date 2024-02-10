@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
       - name: Setup Node.js
-        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install Dependencies
@@ -49,7 +49,7 @@ jobs:
           git checkout -b ${{ env.PR_BRANCH }}
 
       - name: Create Changelog
-        uses: TriPSs/conventional-changelog-action@dd734f74fce61a6e02f821ee1b5930bc79a23534 # v5
+        uses: TriPSs/conventional-changelog-action@ebc124553a706189378cccb6a34fa836ebff7bc1 # v5
         id: changelog
         with:
           github-token: ${{ github.token }}
