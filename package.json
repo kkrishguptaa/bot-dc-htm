@@ -27,7 +27,7 @@
     "@sapphire/prettier-config": "2.0.0",
     "@sapphire/ts-config": "5.0.1",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "9.2.6",
+    "@semantic-release/github": "10.0.2",
     "@types/express": "4.17.21",
     "@types/node": "20.11.27",
     "@types/ws": "8.5.10",
@@ -41,7 +41,7 @@
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-react": "7.34.0",
     "prettier": "3.2.5",
-    "semantic-release": "23.0.2",
+    "semantic-release": "23.0.3",
     "tsc-watch": "6.0.4",
     "typescript": "5.4.2"
   },
