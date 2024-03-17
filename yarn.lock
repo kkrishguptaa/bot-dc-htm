@@ -580,9 +580,9 @@
     tslib "^2.6.2"
 
 "@sapphire/decorators@^6.0.2":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-6.0.4.tgz#0d9908d3888cabb2cee499d1aa7aba919d2b839a"
-  integrity sha512-FZJ3ajnJ6yIj42Z4u4vBli5CZ4nz80WKj8STfhrVfzZ2lzZuJBFOIH+pU9VzWaTfIXKrK/OaK9gj4mfABERJnw==
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-6.1.0.tgz#2e80ec079212e64fc1d03e6b2311d2bd24d95c96"
+  integrity sha512-LAml5F/JN1PMm0krKsuZQ7R32DboQZE1A1ULyEK/m1hkxRt/ympYWSBKVwnurDb+kyPD2CaHMOgKgDW2Gt6mwA==
   dependencies:
     tslib "^2.6.2"
 
