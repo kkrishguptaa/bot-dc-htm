@@ -42,7 +42,7 @@
     "eslint-plugin-react": "7.34.1",
     "prettier": "3.2.5",
     "semantic-release": "23.0.6",
-    "tsc-watch": "6.0.5",
+    "tsc-watch": "6.1.0",
     "typescript": "5.4.3"
   },
   "scripts": {
