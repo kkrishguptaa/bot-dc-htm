@@ -5829,10 +5829,10 @@ ts-mixer@^6.0.3:
   resolved "https://registry.yarnpkg.com/ts-mixer/-/ts-mixer-6.0.4.tgz#1da39ceabc09d947a82140d9f09db0f84919ca28"
   integrity sha512-ufKpbmrugz5Aou4wcr5Wc1UUFWOLhq+Fm6qa6P0w0K5Qw2yhaUoiWszhCVuNQyNwrlGiscHOmqYoAox1PtvgjA==
 
-tsc-watch@6.0.4:
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-6.0.4.tgz#af15229f03cd53086771a97b10653db063bc6c59"
-  integrity sha512-cHvbvhjO86w2aGlaHgSCeQRl+Aqw6X6XN4sQMPZKF88GoP30O+oTuh5lRIJr5pgFWrRpF1AgXnJJ2DoFEIPHyg==
+tsc-watch@6.0.5:
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-6.0.5.tgz#f2a711d35b6647f2dda99966d5f6c5d1a4b55925"
+  integrity sha512-6pcEFEHJPsuJIzKBT/h/sX3CUmrFDJjHamCjtuQRWqb02rYX3eEnRTdL8nwDYIng8Y1AD/NHn4iLCi8a5MEKRg==
   dependencies:
     cross-spawn "^7.0.3"
     node-cleanup "^2.1.2"
