@@ -29,7 +29,7 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "10.0.2",
     "@types/express": "4.17.21",
-    "@types/node": "20.12.3",
+    "@types/node": "20.12.4",
     "@types/ws": "8.5.10",
     "@typescript-eslint/eslint-plugin": "7.5.0",
     "@typescript-eslint/parser": "7.5.0",
@@ -41,7 +41,7 @@
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-react": "7.34.1",
     "prettier": "3.2.5",
-    "semantic-release": "23.0.6",
+    "semantic-release": "23.0.7",
     "tsc-watch": "6.2.0",
     "typescript": "5.4.3"
   },
