@@ -43,7 +43,7 @@
     "prettier": "3.2.5",
     "semantic-release": "23.0.7",
     "tsc-watch": "6.2.0",
-    "typescript": "5.4.3"
+    "typescript": "5.4.4"
   },
   "scripts": {
     "sapphire": "sapphire",
