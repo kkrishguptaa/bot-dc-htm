@@ -610,29 +610,19 @@
   dependencies:
     tslib "^2.6.2"
 
-"@sapphire/discord-utilities@^3.2.2", "@sapphire/discord-utilities@^3.2.3":
+"@sapphire/discord-utilities@^3.2.3":
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-3.2.3.tgz#3c23543759603aefe3df4537c585451ad94c8434"
   integrity sha512-tGR1gp7djEEFuIFcj4fa0kaaJ/+sfm9UHHav6hSCvwytP33tUAIiH7hJhgbM/B7/WWCiwDIZXGBdKg9Wwc0TdA==
   dependencies:
     discord-api-types "^0.37.73"
 
-"@sapphire/discord.js-utilities@7.2.0":
+"@sapphire/discord.js-utilities@7.2.0", "@sapphire/discord.js-utilities@^7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-7.2.0.tgz#471aac31794493ea340005a4f5c5515430bd66b8"
   integrity sha512-FPrSLeZcIsBKBC48B1Fb3zaCop758Lvyvt9RBzjqqt3Fu4IzrO+M63g2bD3FoqOp3FmZ9JE58t2bMYyaujl/cw==
   dependencies:
     "@sapphire/discord-utilities" "^3.2.3"
-    "@sapphire/duration" "^1.1.2"
-    "@sapphire/utilities" "^3.15.3"
-    tslib "^2.6.2"
-
-"@sapphire/discord.js-utilities@^7.1.6":
-  version "7.1.6"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-7.1.6.tgz#265f280746843bb94751223e171c46554e978fd3"
-  integrity sha512-rOSs1xUOSLkqF6MXGtAOFtxYqzCoIIHImMFXftIxIdn38PNsLJNMWjf18bIVRMDMduVXtfROF7PLXxSp/CpLaw==
-  dependencies:
-    "@sapphire/discord-utilities" "^3.2.2"
     "@sapphire/duration" "^1.1.2"
     "@sapphire/utilities" "^3.15.3"
     tslib "^2.6.2"
@@ -643,13 +633,13 @@
   integrity sha512-m+DpXedUHdnH3rM6P9Hiyb9dpdXKb8WeTAVIug0QuN8tarQedbymbOor+UFmBfCbKOkoW9HvGK10xDwDvSfKrw==
 
 "@sapphire/framework@^5.0.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-5.1.0.tgz#2324c97f25e91f6ea039ac862bd9f8a33f6f7eda"
-  integrity sha512-T6ulG5e/ymfZ2DMzBdFdlQed6ReVM62Zs+Brqx5AIF2NMwb7rf7cb3HTSPdMXsa9gl/9mmCWWFgenSgo8GS9UA==
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-5.2.0.tgz#8dd0a476833471faecbc3be714c25a3c7812d715"
+  integrity sha512-wYe2aPWi95TeOGj3kOefrn79hEa/iR99ECW15mKFKv0kuWqpqa+c14EO7+7ChzcCSRAG0NM/2wRoPaSiH08QTA==
   dependencies:
     "@discordjs/builders" "^1.7.0"
     "@sapphire/discord-utilities" "^3.2.3"
-    "@sapphire/discord.js-utilities" "^7.1.6"
+    "@sapphire/discord.js-utilities" "^7.2.0"
     "@sapphire/lexure" "^1.1.7"
     "@sapphire/pieces" "^4.2.2"
     "@sapphire/ratelimits" "^2.4.9"
@@ -2086,9 +2076,9 @@ discord-api-types@0.37.61:
   integrity sha512-o/dXNFfhBpYHpQFdT6FWzeO7pKc838QeeZ9d91CfVAtpr5XLK4B/zYxQbYgPdoMiTDvJfzcsLW5naXgmHGDNXw==
 
 discord-api-types@^0.37.73:
-  version "0.37.79"
-  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.79.tgz#476b34fe7ac91a56972c6dd455c297d8b61489d6"
-  integrity sha512-jblKMZL5f9t/pfUyhHNey8Lb9yVCcBVIPxz/JTY0raAmfj7CuFXdl9m5o/+iiB7E0vv1Kz9V7Ao5HtLRc2gH1Q==
+  version "0.37.83"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.83.tgz#a22a799729ceded8176ea747157837ddf4708b1f"
+  integrity sha512-urGGYeWtWNYMKnYlZnOnDHm8fVRffQs3U0SpE8RHeiuLKb/u92APS8HoQnPTFbnXmY1vVnXjXO4dOxcAn3J+DA==
 
 discord.js@14.x:
   version "14.14.1"
