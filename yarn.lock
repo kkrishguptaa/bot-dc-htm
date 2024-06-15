@@ -2534,10 +2534,10 @@ eslint-compat-utils@^0.1.2:
   resolved "https://registry.yarnpkg.com/eslint-compat-utils/-/eslint-compat-utils-0.1.2.tgz#f45e3b5ced4c746c127cf724fb074cd4e730d653"
   integrity sha512-Jia4JDldWnFNIru1Ehx1H5s9/yxiRHY/TimCuUc0jNexew3cF1gI6CYZil1ociakfWO3rRqFjl1mskBblB3RYg==
 
-eslint-config-love@52.0.0:
-  version "52.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-love/-/eslint-config-love-52.0.0.tgz#3fbe9df5873ce47ee3493684ed0cb7682df0661a"
-  integrity sha512-4H2+FtgWOKZkvGUKoPz7x7hHxgHr1+P2N2D96JzQ6wrePQsoMEvkTB9fHmItpmq2aIawufkfQczKmQTIZUq69w==
+eslint-config-love@53.0.0:
+  version "53.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-love/-/eslint-config-love-53.0.0.tgz#9be61b196dbcf8707607ff7ff6e224a6cc84b666"
+  integrity sha512-lvr93SbSbF/JMbTqQFb07kd+7R9fiRGcTrk6mCLQvYClkB4e4avNG1WfGd1YMnZSyuK9UFAbNiVlfhfHEuvSUA==
   dependencies:
     eslint-plugin-import "^2.25.2"
     eslint-plugin-n "^17.0.0"
