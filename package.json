@@ -27,12 +27,12 @@
     "@sapphire/prettier-config": "2.0.0",
     "@sapphire/ts-config": "5.0.1",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "10.0.6",
+    "@semantic-release/github": "10.0.7",
     "@types/express": "4.17.21",
     "@types/node": "20.14.9",
     "@types/ws": "8.5.10",
-    "@typescript-eslint/eslint-plugin": "7.14.1",
-    "@typescript-eslint/parser": "7.14.1",
+    "@typescript-eslint/eslint-plugin": "7.15.0",
+    "@typescript-eslint/parser": "7.15.0",
     "eslint": "9.6.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-config-love": "53.0.0",
@@ -43,7 +43,7 @@
     "prettier": "3.3.2",
     "semantic-release": "24.0.0",
     "tsc-watch": "6.2.0",
-    "typescript": "5.5.2"
+    "typescript": "5.5.3"
   },
   "scripts": {
     "sapphire": "sapphire",
