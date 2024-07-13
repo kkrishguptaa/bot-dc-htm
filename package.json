@@ -30,7 +30,7 @@
     "@semantic-release/github": "10.1.0",
     "@types/express": "4.17.21",
     "@types/node": "20.14.10",
-    "@types/ws": "8.5.10",
+    "@types/ws": "8.5.11",
     "@typescript-eslint/eslint-plugin": "7.16.0",
     "@typescript-eslint/parser": "7.16.0",
     "eslint": "9.7.0",
