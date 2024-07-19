@@ -1,15 +1,31 @@
 // Unless explicitly defined, set NODE_ENV as development:
-import '@sapphire/plugin-logger/register'
-import '@sapphire/plugin-editable-commands'
-import { setup } from '@skyra/env-utilities'
-import * as colorette from 'colorette'
-import { join } from 'node:path'
-import { srcDir } from './constants'
+process.env.NODE_ENV ??= 'development';
 
-process.env.NODE_ENV ??= 'development'
+import { ApplicationCommandRegistries, RegisterBehavior } from '@sapphire/framework';
+import '@sapphire/plugin-api/register';
+import '@sapphire/plugin-editable-commands/register';
+import '@sapphire/plugin-logger/register';
+import '@sapphire/plugin-subcommands/register';
+import { setup, type ArrayString } from '@skyra/env-utilities';
+import * as colorette from 'colorette';
+import { join } from 'path';
+import { inspect } from 'util';
+import { rootDir } from './constants';
+
+// Set default behavior to bulk overwrite
+ApplicationCommandRegistries.setDefaultBehaviorWhenNotIdentical(RegisterBehavior.BulkOverwrite);
 
 // Read env var
-setup({ path: join(srcDir, '..', '.env') })
+setup({ path: join(rootDir, '.env') });
+
+// Set default inspection depth
+inspect.defaultOptions.depth = 1;
 
 // Enable colorette
-colorette.createColors({ useColor: true })
+colorette.createColors({ useColor: true });
+
+declare module '@skyra/env-utilities' {
+	interface Env {
+		DEVELOPERS: ArrayString;
+	}
+}

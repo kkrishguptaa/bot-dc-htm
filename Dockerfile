@@ -1,13 +1,13 @@
-FROM node:21-alpine3.18@sha256:7d4f2d7c22e5a9e08aad96880b5862eae2a38b4283443b74a991a01d59ca072b
+FROM --platform=linux/amd64 node:21
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
-COPY yarn.lock ./
-
-RUN yarn install
+RUN corepack enable
 
 COPY . .
-RUN yarn build
 
-CMD [ "yarn", "start" ]
+RUN pnpm install
+
+RUN pnpm build
+
+CMD [ "pnpm", "start" ]

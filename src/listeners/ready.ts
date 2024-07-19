@@ -1,25 +1,51 @@
-/* eslint-disable */
-import { Listener } from '@sapphire/framework'
-import { bgMagenta, bold } from 'colorette'
-import { ActivityType } from 'discord.js'
+import { ApplyOptions } from '@sapphire/decorators';
+import { Listener } from '@sapphire/framework';
+import type { StoreRegistryValue } from '@sapphire/pieces';
+import { blue, gray, green, magenta, magentaBright, white, yellow } from 'colorette';
 
+const dev = process.env.NODE_ENV !== 'production';
+
+@ApplyOptions<Listener.Options>({ once: true })
 export class UserEvent extends Listener {
+	private readonly style = dev ? yellow : blue;
 
-  constructor (context: Listener.Context) {
-    super(context, {
-      once: true,
-      event: 'ready'
-    })
-  }
+	public override run() {
+		this.printBanner();
+		this.printStoreDebugInformation();
+	}
 
-  public run () {
-    this.container.client.user?.setStatus('idle')
-    this.container.client.user?.setActivity({
-      name: 'HTM4 Registrations Skyrocket',
-      type: ActivityType.Watching,
-      url: 'https://hackthemountain.tech'
-    })
-    this.container.logger.info(bgMagenta(bold('Discord Service')))
-    this.container.logger.info(bgMagenta(`Power Level: ${bold('OVER 9000')}`))
-  }
+	private printBanner() {
+		const success = green('+');
+
+		const llc = dev ? magentaBright : white;
+		const blc = dev ? magenta : blue;
+
+		const line01 = llc('');
+		const line02 = llc('');
+		const line03 = llc('');
+
+		// Offset Pad
+		const pad = ' '.repeat(7);
+
+		console.log(
+			String.raw`
+${line01} ${pad}${blc('1.0.0')}
+${line02} ${pad}[${success}] Gateway
+${line03}${dev ? ` ${pad}${blc('<')}${llc('/')}${blc('>')} ${llc('DEVELOPMENT MODE')}` : ''}
+		`.trim()
+		);
+	}
+
+	private printStoreDebugInformation() {
+		const { client, logger } = this.container;
+		const stores = [...client.stores.values()];
+		const last = stores.pop()!;
+
+		for (const store of stores) logger.info(this.styleStore(store, false));
+		logger.info(this.styleStore(last, true));
+	}
+
+	private styleStore(store: StoreRegistryValue, last: boolean) {
+		return gray(`${last ? '└─' : '├─'} Loaded ${this.style(store.size.toString().padEnd(3, ' '))} ${store.name}.`);
+	}
 }

@@ -1,43 +1,50 @@
-import { Command } from '@sapphire/framework'
-import { EmbedBuilder, type Message } from 'discord.js'
-import { p } from '../../lib/prisma/client'
+import { Command } from '@sapphire/framework';
+import { type Message } from 'discord.js';
+import { getGuild } from '../../services/economy/guild';
+import { ApplyOptions } from '@sapphire/decorators';
+import { prisma } from '../../lib/prisma';
+import { PaginatedMessage } from '@sapphire/discord.js-utilities';
+import { colors, DefaultEmbed } from '../../lib/embeds';
 
-export class LeaderboardCommand extends Command {
-  constructor (context: Command.Context) {
-    super(context, {
-      aliases: ['leaderboard', 'top', 'richest', 'rich', 'richies', 'scroogemcducks', 'batmans', 'tonystarks', 'billionaires', 'millionaires'],
-      description: 'Check the scroogemcducks of the server!',
-      detailedDescription:
-        'This command is used to `check` the richest people of the server (available to everyone)',
-      requiredClientPermissions: ['ViewChannel', 'SendMessages', 'EmbedLinks'],
-      requiredUserPermissions: ['ViewChannel', 'SendMessages', 'UseApplicationCommands']
-    })
-  }
+@ApplyOptions<Command.Options>({
+	aliases: ['leaderboard', 'lb', 'top'],
+	description: 'Check the leaderboard!',
+	detailedDescription: 'This command is used to `check` the leaderboard (available to everyone).',
+	requiredClientPermissions: ['ViewChannel', 'SendMessages', 'EmbedLinks'],
+	requiredUserPermissions: ['ViewChannel', 'SendMessages', 'UseApplicationCommands'],
+	runIn: ['GUILD_ANY']
+})
+export class WalletCommand extends Command {
+	public override async messageRun(message: Message) {
+		const guild = await getGuild(message.guildId!);
 
-  public async messageRun (message: Message): Promise<Message<boolean>> {
-    if ((message.guildId ?? '') === '') {
-      return await message.reply('Please run this in a guild :/')
-    }
+		const members = await prisma.member.findMany({
+			where: {
+				guildId: guild.id
+			},
+			orderBy: {
+				wallet: {
+					amount: 'desc'
+				}
+			},
+			take: 50
+		});
 
-    const wallets = await p.member.findMany({
-      where: {
-        guildId: message.guildId as string
-      }
-    })
+		const leaderboard = new PaginatedMessage({
+			template: new DefaultEmbed(message).setColor(colors.green)
+		}).addPageBuilder((builder) => {
+			return builder.setAllowedMentions({ repliedUser: true, users: [], roles: [] }).setEmbeds([
+				new DefaultEmbed(message).setTitle('Leaderboard').addFields(
+					members
+						.map((member, index) => ({
+							name: `${index + 1}.`,
+							value: `<@${member.userId}> (${member.wallet.amount} 💰)`
+						}))
+						.sort((a, b) => parseInt(b.value.split(' ')[1]) - parseInt(a.value.split(' ')[1]))
+				)
+			]);
+		});
 
-    const top10 = wallets.sort((a, b) => b.money - a.money).splice(0, 10)
-
-    const leaderboardFields = top10.map((v) => {
-      return `<@${v.userId}>    ${v.money}`
-    })
-
-    return await message.reply({
-      embeds: [
-        new EmbedBuilder({
-          title: `Leaderboard of ${message.guild?.name}`,
-          description: leaderboardFields.join('\n')
-        }).setColor('#EB459E')
-      ]
-    })
-  }
+		await leaderboard.run(message);
+	}
 }

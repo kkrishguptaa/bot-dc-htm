@@ -1,45 +1,74 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 datasource db {
-  provider = "mysql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
-  relationMode =  "prisma"
 }
 
 generator client {
   provider = "prisma-client-js"
-  previewFeatures = ["fullTextIndex", "fullTextSearch", "metrics", "tracing", "views"]
 }
 
 model User {
-  id        String   @id
-  createdAt DateTime @default(now())
-  wallets   Member[]
-
-  @@map("Users")
+  id     String   @id @map("_id")
+  guilds Member[]
 }
 
 model Guild {
-  id        String   @id
-  createdAt DateTime @default(now())
-  wallets   Member[]
+  id      String             @id @map("_id")
+  members Member[]
+  economy GuildEconomyConfig
+}
 
-  @@map("Guilds")
+type GuildEconomyConfig {
+  enabled   Boolean                     @default(false)
+  log       GuildEconomyConfigLog
+  cooldowns GuildEconomyConfigCooldown
+  rewards   GuildEconomyConfigRewards
+  blacklist GuildEconomyConfigBlacklist
+}
+
+type GuildEconomyConfigLog {
+  channel String?
+}
+
+type GuildEconomyConfigCooldown {
+  message  Int @default(600)
+  reaction Int @default(60)
+  voice    Int @default(3600)
+}
+
+type GuildEconomyConfigRewards {
+  message  Int[] @default([1, 2, 3, 4, 5])
+  reaction Int[] @default([1])
+  voice    Int[] @default([5])
+}
+
+type GuildEconomyConfigBlacklist {
+  users    String[] @default([])
+  roles    String[] @default([])
+  channels String[] @default([])
 }
 
 model Member {
-  money     Int      @default(0)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  user      User     @relation(fields: [userId], references: [id])
-  guild     Guild    @relation(fields: [guildId], references: [id])
+  id String @id @default(cuid()) @map("_id")
 
+  user    User   @relation(fields: [userId], references: [id])
   userId  String
+  guild   Guild  @relation(fields: [guildId], references: [id])
   guildId String
 
-  @@id([userId, guildId])
-  @@map("GuildMembers")
-  @@index([userId])
-  @@index([guildId])
+  wallet Wallet
+  txn    Transaction[]
+
+  @@unique([userId, guildId])
+}
+
+type Wallet {
+  amount Int @default(0)
+}
+
+type Transaction {
+  amount Int
+  date   DateTime @default(now())
+  remark String?
+  actor  String?
 }
