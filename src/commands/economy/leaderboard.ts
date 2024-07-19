@@ -20,14 +20,19 @@ export class WalletCommand extends Command {
 
 		const members = await prisma.member.findMany({
 			where: {
-				guildId: guild.id
+				guildId: guild.id,
+				wallet: {
+					isNot: {
+						amount: 0
+					}
+				}
 			},
 			orderBy: {
 				wallet: {
 					amount: 'desc'
 				}
 			},
-			take: 50
+			take: 10
 		});
 
 		const leaderboard = new PaginatedMessage({
