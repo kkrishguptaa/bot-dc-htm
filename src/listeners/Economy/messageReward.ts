@@ -39,6 +39,8 @@ export class MessageRewardEvent extends Listener<typeof Events.MessageCreate> {
 
 		if (ratelimit.limited) return;
 
+		ratelimit.consume();
+
 		const reward = sample(guild.economy.rewards.message) ?? Math.min(...guild.economy.rewards.message);
 
 		const txn: Transaction = {
@@ -71,7 +73,5 @@ export class MessageRewardEvent extends Listener<typeof Events.MessageCreate> {
 		this.container.logger.info(
 			`${getAuthorInfo(message.author)} has been rewarded ${reward} for sending a message in ${getGuildInfo(message.guild)}`
 		);
-
-		ratelimit.consume();
 	}
 }
