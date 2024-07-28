@@ -41,7 +41,7 @@ export class GiveMoneyCommand extends Command {
 		});
 
 		const guild = await getGuild(message.guildId);
-		const user = await getUser(message.author.id);
+		const user = await getUser(recipient.id);
 		const member = await getMember(user, guild);
 
 		const txn: Transaction = {
